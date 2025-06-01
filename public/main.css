@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme-body {
+    background-color: #b10a95;
+    color: white;
+}
+
+.light-theme {
+    background-color: #ffffff;
+    color: #000;
+    border-color: #000;
+}
+
+.dark-theme {
+    background-color: #630153;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+
+}
+
+.card-core {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 3px;
+}
+
+.card-core img {
+    width: 100%;
+    border-top-left-radius: 47px;
+    border-top-right-radius: 47px;
+    margin-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.7px;
+    transition: transform 0.3s;
+}
+
+.card-core button {
+    max-width: 100%;
+    width: 80%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    padding: 10px 0;
+    margin: 10px 0 30px 0;
+    border-style: solid;
+    border-radius: 100px;
+    border-width: 1.7px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Слайдер*/
+.slider-container {
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+}
+
+.slider img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid;
+    transition: all 0.3s ease;
+}
+
+/* Ползунок насыщенности */
+.saturation-control {
+    width: 80%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#saturationRange {
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.slider button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/* Стили для формы в светлой теме */
+#uploadForm {
+    background: #ffffff;
+    padding: 20px 0;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#uploadForm input[type="file"] {
+    margin: 10px 0;
+    color: #222;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 6px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#uploadForm button {
+    padding: 8px 30px;
+    border-radius: 20px;
+    border: 1.5px solid black;
+    background: #ffffff;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+#uploadForm button:hover {
+    background: #f7a2e9;
+    border-color: #ffe8fb;
+}
+
+/* Стили для формы в тёмной теме */
+.dark-theme-body #uploadForm {
+    background: #e089d3;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+.dark-theme-body #uploadForm input[type="file"] {
+    background: #630153;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.dark-theme-body #uploadForm button {
+    background: #630153;
+    color: #fff;
+    border-color: #fff;
+}
+
+.dark-theme-body #uploadForm button:hover {
+    background: #b10a95;
+    border-color: #fff;
+}

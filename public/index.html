@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS-DAY-1 с SQLite</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <!-- Слайдер -->
+    <div class="slider-container">
+        <div class="slider">
+            <button id="prevBtn">&#10094;</button>
+            <img id="sliderImage" src="" alt="Слайдер" />
+            <button id="nextBtn">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Карточка -->
+    <div class="card">
+        <div class="card-core">
+            <img id="image" src="" alt="Основное изображение" />
+            <p>DAN-DAN-DAN</p>
+
+            <!-- Ползунок насыщенности -->
+            <div class="saturation-control">
+                <label>Насыщенность:</label>
+                <input type="range" id="saturationRange" min="0" max="200" value="100" />
+            </div>
+
+            <button class="light-theme" id="theme">Light</button>
+        </div>
+    </div>
+
+    <!-- Форма загрузки -->
+    <form id="uploadForm" enctype="multipart/form-data"
+        style="margin: 30px auto; padding: 30px; max-width: 500px; text-align: center;">
+        <label for="fileInput">Добавить своё изображение:</label>
+        <input type="file" id="fileInput" accept="image/*" />
+        <button type="submit">Загрузить</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
